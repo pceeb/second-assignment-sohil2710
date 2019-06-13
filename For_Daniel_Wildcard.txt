@@ -1,0 +1,30 @@
+ 1010  pwd
+ 1011  ls
+ 1012  touch TestFile
+ 1013  mv TestFile TestFile2
+ 1014  rm TestFile2 
+ 1015  mkdir TestDirectory
+ 1016  touch TestDirectory/Test.txt
+ 1017  rmdir TestDirectory/
+ 1018  rm TestDirectory/Test.txt 
+ 1019  rmdir TestDirectory/
+ 1020  echo "My first line." > test.txt
+ 1021  cat test.txt
+ 1022  echo "My second line" >> test.txt 
+ 1023  ls / >> ListRootDir.txt
+ 1024  cat ListRootDir.txt 
+ 1025  mkdir TestWild
+ 1026  cd TestWild/
+ 1027  touch File1.txt
+ 1028  touch File2.txt
+ 1029  touch File3.txt
+ 1030  touch File4.txt
+ 1031  touch File1.csv
+ 1032  touch File2.csv
+ 1033  touch File3.csv
+ 1034  touch File4.csv
+ 1035  touch Anotherfile.csv
+ 1036  touch Anotherfile.txt
+ 1037  ls
+ 1038  ls | wc -l
+ 1039  history | tail -n 30 > For_Daniel_Wildcard.txt
