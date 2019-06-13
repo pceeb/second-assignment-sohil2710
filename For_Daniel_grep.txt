@@ -19,7 +19,7 @@
  1050  wget http://www.cep.unep.org/pubs/legislation/spawannxs.txt
  1051  head -n 50 spawannxs.txt
  1052  grep Orchidaceae spawannxs.txt
- 1053   grep -c Orchidaceae spawannxs.txt
+ 1053  grep -c Orchidaceae spawannxs.txt
  1054  grep Falco spawannxs.txt
  1055  grep -i Falco spawannxs.txt
  1056  grep -i ara spawannxs.txt
