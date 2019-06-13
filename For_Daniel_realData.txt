@@ -1,0 +1,122 @@
+  563  cd introscicomp2014/
+  564  ls
+  565  cd UNIX
+  566  ls
+  567  cd Data
+  568  ls
+  569  cd fasta/
+  570  ls
+  571  less E.coli.fasta 
+  572  head -n3 407228326.fasta
+  573  head -n3 407228326.fasta
+  574  wc -l *.fasta
+  575  tail -n+2 407228326.fasta
+  576  tail n-2 407228326.fasta
+  577  tail -n+2 407228326.fasta | tr -d "\n"
+  578  tail -n+2 407228326.fasta | tr -d "\n" | wc -c
+  579  tail -n+2 407228412.fasta | tr -d "\n" | wc -c
+  580  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
+  581  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
+  582  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+  583  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
+  584  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
+  585  cd ../../
+  586  ls
+  587  cd Data
+  588  ls
+  589  less otoos10.txt 
+  590  head -n 10 otoos10.txt 
+  591  head -n 13899 otoos10.txt | tail -n+265 > darwin.txt
+  592  ls
+  593  less darwin.txt 
+  594  head -n 13900 otoos10.txt | tail -n+264 > darwin.txt
+  595  less darwin.txt 
+  596  grep -i -w ["evolution", "evolved"] | wc -l
+  597  grep -i -w [evolution, evolved] | wc -l
+  598  grep -i -w [evolution, evolved]
+  599  grep "evolution
+  600  grep -i -w [evolution, evolved] otoos10.txt | wc -l
+  601  grep -i -w evolution otoos10.txt | wc -l
+  602  grep -i -w evolution otoos10.txt
+  603  grep -i -w otoos10.txt evolution
+  604  grep -i -w evolution otoos10.txt
+  605  grep -i -w a otoos10.txt
+  606  grep -i -w We otoos10.txt
+  607  grep -i -w -o evolution otoos10.txt | wc -l
+  608  grep -i -w -o We otoos10.txt | wc -l
+  609  grep -i -w -o [evolution,evolved] otoos10.txt | wc -l
+  610  grep -i -w -o [evolution,evolved] otoos10.txt
+  611  grep -i -w -o [evolution,evolved] darwin.txt | wc -l
+  612  grep -i -w -o [evolution,evolved] darwin.txt | head -n 10
+  613  grep -i -w -o ["evolution","evolved"] darwin.txt | head -n 10
+  614  grep -i -w -o -n ["evolution","evolved"] darwin.txt | head -n 10
+
+  812  cd introscicomp2014/
+  813  ls
+  814  cd UNIX/Data/
+  815  ls
+  816  less darwin.txt | grep -o "evolution\|evolved"
+  817  head darwin.txt 
+  818  tail darwin.txt 
+  819  hist
+  820  history
+  821  less darwin.txt | grep -o -i -w "evolution\|evolved"
+  822  less darwin.txt | grep -o -i -w "evolution"
+
+  964  cd introscicomp2014/UNIX/Data/
+  965  ls
+  966  less darwin.txt 
+  967  less darwin.txt | grep -o [evolution,evolved]  
+  968  darwin.txt |  grep -i -w [evolution, evolved] | wc -l
+  969  less darwin.txt |  grep -i -w [evolution, evolved] | wc -l
+  970  printf darwin.txt |  grep -i -w [evolution, evolved] | wc -l
+  971  printf darwin.txt |  grep -i -w -o [evolution, evolved] | wc -l
+  972  head darwin.txt | tr -d "\n" | grep -o [evolution,evolved]
+  973  head darwin.txt | tr -d "\n" | grep -o "Wallace"
+  974  less darwin.txt | tr -d "\n" | grep -o "Wallace"
+  975  less darwin.txt | tr -d "\n" | grep -o "evolution","evolved"
+  976  less darwin.txt | tr -d "\n" | grep -o ["evolution","evolved"]
+  977  less darwin.txt | tr -d "\n" | grep -o "evolution","evolved"
+  978  less darwin.txt | tr -d "\n" | grep -o "evolution"
+  979  less darwin.txt | tr -d "\n" | grep -o "evolved"
+  980  less darwin.txt grep -o "evolved"
+  981  less darwin.txt | grep -o "evolved"
+  982  less darwin.txt | grep -o "evolution"
+  983  less darwin.txt | grep -o "evol[u,o][t,l][i,v][o,e][n,d]"
+  984  less darwin.txt | grep -o "evol[u,v][t,e][i,d][on]"
+  985  less darwin.txt | grep -o "evol[u,v][t,e][i,d][o][n]"
+  986  less darwin.txt | grep -o "evol[u,v][t,e][i,d]"
+  987  less darwin.txt | grep -o "evol[u,v][t,e][i,d]*"
+  988  less darwin.txt | grep -o -i -w "evolved"
+  989  less darwin.txt | grep -o -i -w "evolution"
+  990  less darwin.txt | grep -o "evolution"
+  991  less darwin.txt | grep -o "evolution\|evolved"
+  992  ls
+  993  cd introscicomp2014/
+  994  ls
+  995  cd UNIX
+  996  ls
+  997  cd Data
+  998  ls
+  999  less darwin.txt 
+ 1000  history
+ 1001  ls
+ 1002  cd second-assignment-sohil2710/
+ 1003  ls
+ 1004  cd ~
+ 1005  ls
+ 1006  cd introscicomp2014/
+ 1007  ls
+ 1008  cd UNIX/Data/
+ 1009  ls
+ 1010  cd Temperatures/
+ 1011  ls
+ 1012  less 1800.csv | grep "18000205,TMAX"
+ 1013  less 1800.csv | grep "18000205,TMAX" | cut , 
+ 1014  less 1800.csv | grep "18000205,TMAX" | cut -d ,
+ 1015  less 1800.csv | grep "18000205,TMAX" | cut -d , -f 2
+ 1016  less 1800.csv | grep "18000205,TMAX" | cut -d , -f 4
+ 1017  less 1800.csv | grep "18000205,TMAX" | cut -d , -f 4 | sort -n
+ 1018  less 1800.csv | grep "18000205,TMAX" | cut -d , -f 4 | sort -n | tail -n 1
+ 1019  less 1800.csv | grep "18000505,TMAX" | cut -d , -f 4 | sort -n | tail -n 1
+ 1020  ls
