@@ -1,0 +1,8 @@
+#Exercise 2.13.3
+
+To create the darwin.txt file:
+	head -n 13900 otoos10.txt | tail -n+264 > darwin.txt
+To count occurances of "evolution" or "evolved":
+	cat darwin.txt | grep -o -i -w "evolution\|evolved" | wc -l
+To count occurances of "natural selection" or "Wallace":
+	cat darwin.txt | grep -o -i -w "natural selection\|Wallace" | wc -l 
